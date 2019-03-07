@@ -65,6 +65,7 @@
       home: new Layout(new Page('menu.html'), new Page('home.html'), new Page('footer.html')),
       ingredients: HeaderFooterLayout('ingredients.html'),
       gallery: new Layout(new Page('menu.html'), new Page('gallery.html')),
+      contact: new Layout(new Page('menu.html'), new Page('contact.html')),
       '#default': new Layout(new Page('menu.html'), new Page('home.html'), new Page('footer.html')),
     },
     document.querySelector('main')
