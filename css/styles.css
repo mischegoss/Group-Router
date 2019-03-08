@@ -111,13 +111,20 @@ form label {
   display: block;
 }
 
+
 .card {
   width: 90vw;
   margin: 0 auto;
 }
 
 .card-img-top {
-  width: 80%;
+  max-width: 100%;
+  max-height: 20%;
+}
+
+#blog-header {
+  font-weight: bolder;
+  font-size: 4em;
 }
 
 /* GLOBAL */

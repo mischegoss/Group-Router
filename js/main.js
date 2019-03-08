@@ -19,7 +19,7 @@ $("#gallery-click").hide();
     
       
     
-    $("#galleryTitle").append("Drinkspiration");
+    $("#galleryTitle").append("Here's Your Drinkspiration");
             $.each( data.photos.photo, function( i, gp ) {
     
     var farmId = gp.farm;
@@ -29,7 +29,6 @@ $("#gallery-click").hide();
     
     console.log(farmId + ", " + serverId + ", " + id + ", " + secret);
     
-    //  https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
     
     $("#flickr").append('<img src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '.jpg"/>');
    
