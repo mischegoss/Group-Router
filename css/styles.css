@@ -1,3 +1,10 @@
+#blog-image {
+  width: 60%;
+  height: auto;
+  background-image:url(../images/expensive.jpg)
+}
+
+
 body {
   font-family: arial;
   font-size: 12px;
