@@ -1,6 +1,6 @@
 
 
-
+/*Test */
  function getGallery() {
   
 $("#gallery-click").hide();
