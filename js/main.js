@@ -1,4 +1,4 @@
-let click = 0;
+
 
  function getGallery() {
   
