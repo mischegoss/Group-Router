@@ -57,17 +57,17 @@
     }
   }
 
-  const HeaderFooterLayout = (innerPage) => new Layout(new Page('menu.html'), new Page(innerPage), new Page('footer.html'));
+  const HeaderLayout = (innerPage) => new Layout(new Page('menu.html'), new Page(innerPage));
   
   const r = new Router(
     {
-      about: HeaderFooterLayout('about.html'),
-      home: new Layout(new Page('menu.html'), new Page('home.html'), new Page('footer.html')),
-      ingredients: HeaderFooterLayout('ingredients.html'),
-      gallery: new Layout(new Page('menu.html'), new Page('gallery.html')),
-      contact: new Layout(new Page('menu.html'), new Page('contact.html')),
-      blog: new Layout(new Page('menu.html'), new Page('blog.html')),
-      '#default': new Layout(new Page('menu.html'), new Page('home.html'), new Page('footer.html')),
+      about: HeaderLayout('about.html'),
+      home:   HeaderLayout('home.html'),
+      ingredients: HeaderLayout('ingredients.html'),
+      gallery:  HeaderLayout('gallery.html'),
+      contact: HeaderLayout('contact.html'),
+      blog: HeaderLayout('blog.html'),
+      '#default': HeaderLayout('home.html'),
     },
     document.querySelector('main')
   );

@@ -1,1 +1,30 @@
-<!--To Add-->
+
+
+<form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="contact"></textarea>
+        <button class= "btn" id="contact-button" input type="submit" value="Send" >Submit</button>
+        <div id="sentNotification"></div>
+        
+    </form>
+
+<!--To DO: Refactor this so it is not on the Views page-->
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_template', this);
+                console.log("Sent")
+                $("#sentNotification").append("Message Sent");
+            });
+        }
+    </script>
+   
+

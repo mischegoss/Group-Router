@@ -1,15 +1,31 @@
+body {
+  font-family: arial;
+  font-size: 12px;
+  color: #666;
+}
+
+/*INGREDIENTS FORM */
+
+#div-that-holds-checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+}
+
+/*RECIPE CARD */
 #recipe-output .card {
   background-color: #000000;
   color: #ffffff;
   border: 2px #c2b943 solid;
   overflow: hidden;
-
+  width: 40vw;
   margin-top: 50px;
   margin: 10px;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 5px;
-  width: 30%;
+ 
 } 
 #recipe-output {
   display: flex;
@@ -52,12 +68,13 @@
   max-width: 100px;
 }
 
-
+/*MEDIA QUERIES FOR RECIPE */
 @media only screen and (max-width: 800px) {
   .drinkNumber,
   .drink-name {
     font-size: 2.5em;
   }
+  
 }
 
 @media only screen and (max-width: 500px) {
@@ -65,21 +82,14 @@
   .drink-name {
     font-size: 1.5em;
   }
-
+  #recipe-output .card {
+    width: 80vw;
+  }
 }
 
 
+/*CONTACT FORM */
 
-
-
-
-
-
-body {
-  font-family: arial;
-  font-size: 12px;
-  color: #666;
-}
 form {
   width: 500px;
   background: white;
@@ -196,20 +206,6 @@ form label {
   transform: scale(1.15);
 }
 
-#footer {
-  bottom: 0;
-  width: 100%;
-  font-size: 1em;
-  font: white;
-  position: absolute;
-  height: $height-footer;
-  background-color: black;
-  .footer-block {
-    margin: 10px 0;
-  }
-}
-}
-
 
 
 .top-button {
@@ -308,101 +304,6 @@ form label {
     margin-bottom: 50px;
   }
   
-  /* WHY ALCOHOL SECTION */
-  .why-alcohol {
-    min-height: 1000px;
-    width: 100%;
-    background-color: #000000;
-  }
-  .why-title {
-    font-size: 25px;
-    text-align: center;
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 20px;
-    margin-top: 30px;
-  }
-  .why-description {
-    font-size: 15px;
-    text-align: center;
-    line-height: 2;
-    color: #ffffff;
-    margin-bottom: 50px;
-  }
-  .why-row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .col-lg-6 {
-    max-width: 50%;
-  }
-  .why-image img {
-    height: auto;
-    border-style: none;
-    max-width: 100%;
-    max-height: 100%;
-    padding-bottom: 20px;
-  }
-  .why-content h2 {
-    font-size: 26px;
-    color: #ffffff;
-  }
-  .why-content p {
-    font-size: 15px;
-    line-height: 2;
-    color: #ffffff;
-  }
-  
-  /* SUPPLEMENTAL WELCOME */
-  .supplemental-welcome {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #000000;
-    text-align: center;
-  }
-  .supplemental-welcome h2 {
-    padding-top: 50px;
-    padding-bottom: 40px;
-    color: #ffffff;
-    font-size: 26px;
-  }
-  
-  /* HOW IT WORKS AREA */
-  .how-it-works-area {
-    min-height: 800px;
-    background-color: #000000;
-  }
-  .how-it-works-area img {
-    max-width: 100%;
-    border-style: none;
-    padding-bottom: 30px;
-  }
-  .how-it-works-area h2 {
-    color: #ffffff;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 20px;
-  }
-  .how-it-works-area .step-list li span {
-    color: #000000;
-    background-color: #ffffff;
-    display: block;
-    border-radius: 50px;
-    line-height: 35px;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  .how-it-works-area .step-list li {
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
-  
   /* TEAM MEMBER AREA */
   .team-area {
     min-height: 1200px;
@@ -451,47 +352,5 @@ form label {
     padding-bottom: 15px;
   }
   
-  /* CONTACT AREA */
-  .contact-area {
-    min-height: 600px;
-    background-color: #000000;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-  .contact-area .contact-title {
-    color: #ffffff;
-    font-size: 35px;
-    line-height: 2;
-    text-align: center;
-  }
-  .contact-area .contact-description {
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 2;
-    text-align: center;
-  }
-  .form-container {
-    text-align: center;
-    padding-top: 20px;
-  }
-  .form-submit-btn {
-    text-align: center;
-  }
-  .submit-btn {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
   
-  /* FOOTER */
-  footer {
-    text-align: center;
-    background-color: #000000;
-  }
-  footer h2 {
-    font-size: 30px;
-    color: #ffffff;
-    padding-bottom: 15px;
-    padding-top: 15px;
-  }
- 
   
