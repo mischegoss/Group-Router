@@ -1,3 +1,80 @@
+#recipe-output .card {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px #c2b943 solid;
+  overflow: hidden;
+
+  margin-top: 50px;
+  margin: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+  width: 30%;
+} 
+#recipe-output {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* DRINK NUMBER */
+.drinkNumber {
+  font-size: 3.5em;
+  font-weight: 900;
+  font-family: "Arvo", serif;
+}
+/* DRINK NAME */
+.drink-name {
+  font-size: 3em;
+  font-weight: 900;
+  font-family: "Merriweather", serif;
+}
+
+/* DRINK COMBO MEASURE */
+.drink-howTo {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.drink-comboMeasure {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+/* DRINK INSTRUCTION */
+.drink-instructions {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: "Slabo 27px", serif;
+}
+.drink-images {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .drinkNumber,
+  .drink-name {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .drinkNumber,
+  .drink-name {
+    font-size: 1.5em;
+  }
+
+}
+
+
+
+
+
+
+
+
 body {
   font-family: arial;
   font-size: 12px;
@@ -125,6 +202,7 @@ form label {
   }
 }
 }
+
 
 
 .top-button {
