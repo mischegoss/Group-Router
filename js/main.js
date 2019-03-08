@@ -41,7 +41,7 @@ $("#gallery-click").hide();
    
   }
 
-
+function gettheFuckingRecipes()  {
   var config = {
     apiKey: "AIzaSyBEJ9arbT3vnXcQrLp-JzzgZ8WrlSYIjg8",
     authDomain: "alcohol-engine.firebaseapp.com",
@@ -184,4 +184,4 @@ $("#gallery-click").hide();
   });
   
 
-  
+}
