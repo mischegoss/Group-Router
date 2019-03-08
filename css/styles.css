@@ -34,7 +34,14 @@ form label {
   display: block;
 }
 
+.card {
+  width: 90vw;
+  margin: 0 auto;
+}
 
+.card-img-top {
+  width: 80%;
+}
 
 /* GLOBAL */
 .container {
