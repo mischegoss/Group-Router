@@ -67,6 +67,7 @@
       gallery:  HeaderLayout('gallery.html'),
       contact: HeaderLayout('contact.html'),
       blog: HeaderLayout('blog.html'),
+      onepage: new Layout(new Page('menu.html'), new Page('home.html'), new Page('ingredients.html'), new Page('gallery.html'), new Page('blog.html'), new Page('contact.html')),
       '#default': HeaderLayout('home.html'),
     },
     document.querySelector('main')
