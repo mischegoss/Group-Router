@@ -7,11 +7,12 @@ body {
 }
 
 #tamar {
-  display: block;
-  height: 125px;
+ 
+ height: 125px;
   width: 125px;
   background-image: url(../images/rsz_screen_shot_2019-03-08_at_71540_pm.jpg)
-  margin: auto;
+  
+  
 }
 
 /*INGREDIENTS FORM */
