@@ -6,14 +6,6 @@ body {
   color: #666;
 }
 
-#tamar {
- 
- height: 125px;
-  width: 125px;
-  background-image: url(../images/rsz_screen_shot_2019-03-08_at_71540_pm.jpg)
-  
-  
-}
 
 /*INGREDIENTS FORM */
 
@@ -83,6 +75,7 @@ body {
 @media only screen and (max-width: 800px) {
   .drinkNumber,
   .drink-name {
+   
     font-size: 2.5em;
   }
   
@@ -145,7 +138,7 @@ form label {
 
 #blog-header {
   font-weight: bolder;
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 /* GLOBAL */
@@ -157,10 +150,10 @@ form label {
     color: #ffffff;
     background-color: #8f5a21;
     border-color: #826505;
-    font-size: 12px;
+    font-size: 1em;
     border-radius: 0;
     font-weight: 800px;
-    letter-spacing: 2px;
+    letter-spacing: .1em;
     white-space: inherit;
     text-transform: uppercase;
   }
@@ -219,22 +212,13 @@ form label {
 
 
 
-.top-button {
-    width: 30%;
-    min-height: 4em;
-    padding: 3em;
-}
+
 
 .spacer {
     height: 2em;
     width: 100%;
 }
 
-.gallery-button  {
-  display: block;
-  width: 30vw;
-
-}
 
 #navigation {
   background-color: black;
